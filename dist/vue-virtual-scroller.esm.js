@@ -841,7 +841,6 @@ var __vue_render__ = function() {
             {
               key: view.nr.id,
               staticClass: "vue-recycle-scroller__item-view",
-              class: { hover: _vm.hoverKey === view.nr.key },
               style: _vm.ready
                 ? {
                     transform:
@@ -851,15 +850,7 @@ var __vue_render__ = function() {
                       view.position +
                       "px)"
                   }
-                : null,
-              on: {
-                mouseenter: function($event) {
-                  _vm.hoverKey = view.nr.key;
-                },
-                mouseleave: function($event) {
-                  _vm.hoverKey = null;
-                }
-              }
+                : null
             },
             [
               _vm._t("default", null, {
